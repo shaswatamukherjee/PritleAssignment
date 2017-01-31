@@ -1,0 +1,11 @@
+<header class="page-header">Assignment 1</header>
+<div>
+    <p><b>Task:</b> Given an array of elements. Show an alert popup with link index on click on each array element.</p>
+    <p><b>Solution</b></p>
+    <p>Enter the comma separated elements of the array</p>
+    <input type="text" ng-required="true" placeholder="ele 1, ele 2, ele 3" size="100" ng-model="elementArray">
+    <div>
+        <p></p>
+        <p ng-repeat="val in elementArray.split(',') track by $index"><a href="" ng-click="showPopup($index)">{{val}}</a></p>
+    </div>
+</div>

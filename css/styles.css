@@ -1,0 +1,38 @@
+.mcf-page-header {
+    height:auto;
+    background-color:royalblue;
+    color: #ffffff;
+    padding: 0 0 20px 0;
+}
+
+.mcf-page-content {
+    height:100%;
+    overflow: hidden;
+}
+
+.mcf-page-sidenav {
+    background-color:cornsilk;
+    color: #333333;
+    padding:20px;
+    text-align: justify;
+}
+
+.mcf-content {
+    padding:20px;
+    text-align: left;
+    overflow: auto;
+}
+
+.ext-content {
+    padding: 50px;
+    margin: 20px;
+    background-color: #FFF2E0;
+}
+
+pre {
+    white-space: pre-wrap;       /* Since CSS 2.1 */
+    white-space: -moz-pre-wrap;  /* Mozilla */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+

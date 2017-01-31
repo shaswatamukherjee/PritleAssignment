@@ -1,0 +1,42 @@
+<header class="page-header">Assignment 2</header>
+<section>
+    <p><b>Question:</b> Explain inheritance in JavaScript. What are the approaches? Mention pros and cons.</p>
+    <p><b>Answer</b></p>
+    <p>Inheritance in javascript logically is same as in other OOP. The concept means that some of the properties are inherited from its super, by referencing the property with a base of the super.
+    In Javascript the concept of inheritance associated with only one construct which is Js objects. Using objects whatever you extract is termed as inheritance.
+    I will share two examples which shall cover this:<br>
+    <pre>
+    var obj = {
+        name: "Shaswata Mukherjee",
+        address: {
+            place: "Stromboli",
+            housenr: "1",
+            city: "Amstelveen",
+            zip: "1186CH"
+        },
+        getAddress: function() {
+            return this.address.place + ' ' + this.address.housenr + ',' + this.address.city + ', ' + this.address.zip;<br>
+        }
+    }
+    </pre>
+    In the above snippet, you would find an object containing some properties, a method and an important term property chaining or prototype chaining.
+    This is an important concept which explains how from the object "obj" we can chain the property to get the value. This is inheritance,
+        <br>
+    if we try to access the method "getAddress" using:<br>
+    obj.getAddress() which is also a way of achieving inheritance, then the following things happen:<br>
+    using this.address.place -> this is the reference to the object obj and then using property chain<br>
+        obj > address > place we get "Stromboli". This is how we implement inheritance.<br>
+        <br>
+    Pros:
+        <ol>
+            <li>According to me using a singleton makes the code more modularised. All variables and related methods are maintained under one head.</li>
+            <li>It reduces an overhead of declaring such properties</li>
+            <li>Same property names i.e variable and method names can be used over and over again as the encapsulating object is unique.</li>
+        </ol>
+    Cons:
+        <ol>
+            <li>Sometimes referenced variable are a little difficult to maintain. For a small project, inheritance increases overhead.</li>
+        </ol>
+
+    </p>
+</section>
